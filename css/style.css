@@ -1,0 +1,312 @@
+/* CSS Document */
+html, body {
+	margin:auto;
+	padding:auto;
+	border:none;
+	background-image:url(../img/bg.png);
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+#wrapper {
+	width:980px;
+	margin:auto;
+}
+#header {
+	width:100%;
+	margin:auto;
+	height:110px;
+}
+#logo {
+	font: bold 77px "Comic Sans MS";
+	color:#ffffff;
+	width:30%;
+	float:left;
+}
+#callus {
+	width:50%;
+	height:35px;
+	float:right;
+	font: bold 12px "Comic Sans MS";
+	color:#ffffff;
+	text-align:right;
+}
+#navigation {
+	width:68%;
+	float:right;
+	background:#FFFFFF;
+	margin-top:25px;
+	height:42px;
+}
+/* navigation menu styling - start */
+.nav {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	line-height: 22px;
+	z-index:100;
+}
+.nav>li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.nav>li>a {
+	display: block;
+	position: relative;
+	padding: 10px 20px;
+	font-family:"Comic Sans MS";
+	color: #FD8382;
+	font-size: 16px;
+	text-decoration: none;
+	background: #ffffff;
+}
+.nav>li>a:hover, .nav>li:hover>a {
+	background: #9CD3A5;
+}
+.nav>.dropdown>a {
+	padding: 10px 30px 10px 20px;
+}
+.dropdown>a::after {
+	position: absolute;
+	top: 17px;
+	right: 10px;
+	width: 7px;
+	height: 7px;
+}
+.dropdown>a:hover::after, .dropdown:hover>a::after {}
+/* The submenus */
+.nav ul {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+/* General layout settings for the link containers of the submenus */
+.nav ul li {
+	position: absolute;
+	top: -9999px; /* Hiding them */
+	height: 0px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	/* Making them to expand their height with a transition, for a slide effect */
+	-webkit-transition: height .2s ease-in;
+	-moz-transition: height .2s ease-in;
+	-o-transition: height .2s ease-in;
+	-ms-transition: height .2s ease-in;
+}
+/* Displays the submenu links, by expading their containers (with a transition, previously defined) and by repositioning them */
+.dropdown:hover>ul>li {
+	height: 30px;
+	position: relative;
+	top: auto;
+}
+/* The submenu links */
+.nav ul li a {
+	padding: 4px 20px;
+	width: 121px;
+	display: block;
+	position: relative;
+	font-family:"Comic Sans MS";
+	color: #FD8382;
+	text-decoration: none;
+	font-size: 16px;
+	background: #ffffff;
+	border:1px solid #ffffff;
+}
+/* Changing the link's color and background on hover */
+.nav ul li:hover>a, .nav ul li a:hover {
+	background: #9CD3A5;
+}
+/* navigation menu styling - end */
+#container {
+	border:20px solid #ffffff;
+	margin:auto;
+	background:#ffffff;
+	min-height:772px;
+}
+#banner {
+	position:relative;
+}
+#contents {
+	width:100%;
+	border-top:12px solid #ffffff;
+}
+#contents h4 {
+	font-size:23px;
+	margin:0;
+	padding:0;
+	line-height:23px;
+}
+#contents h1 {
+	font: normal 39px "Comic Sans MS";
+	color:#9CD3A5;
+	margin:0;
+	padding:0;
+}
+#content_box1, #content_box2, #content_box3, #content_box4 {
+	width:225px;
+	min-height:180px;
+	float:left;
+	font: normal 13px "Comic Sans MS";
+	color:#ffffff;
+	text-align:left;
+}
+#content_box1 {
+	border-top:8px solid #9CD3A5;
+	background:#77B8DB;
+	margin-right:13px;
+}
+#content_box2 {
+	border-top:8px solid #77B8DB;
+	background:#FFBCBC;
+	margin-right:13px;
+}
+#content_box3 {
+	border-top:8px solid #FF8282;
+	background:#9CD3A5;
+	margin-right:13px;
+}
+#content_box4 {
+	border-top:8px solid #FFBCBC;
+	background:#FF8282;
+}
+#content_box1 div, #content_box2 div, #content_box3 div, #content_box4 div {
+	margin:12px 10px;
+	width:auto;
+	min-height:126px;
+}
+#content_box1 a, #content_box2 a, #content_box3 a, #content_box4 a {
+    display: block;
+    height: 21px;
+	margin:0 12px;
+    width: auto;
+    background: #ffffff;
+	text-align:right;
+	color:#FF8282;
+	font: normal 15px "Comic Sans MS";
+	text-decoration:none;
+}
+#content_box1 a:hover, #content_box2 a:hover, #content_box3 a:hover, #content_box4 a:hover {
+	color:#77B8DB;
+}
+#content {
+	width:auto;
+	margin:0 9px;
+	min-height:778px;
+	font: normal 15px "Comic Sans MS";
+	color: #717070;
+}
+.majorarea {
+	width:610px;
+	float:left;
+}
+.minorarea {
+	width:270px;
+	height:auto;
+	float:right;
+}
+.upcomingevents {
+	background:#77B8DB;
+	padding:15px;
+	font:normal 15px "Comic Sans MS";
+	color:#ffffff;
+}
+.spacebar_orange {
+	border:3px solid #FFBCBC;
+}
+.button_white {
+	display: block;
+	margin: 0;
+	padding:5px 0;
+	width: auto;
+	background: #ffffff;
+	text-align: center;
+	color: #FF8282;
+	font: normal 15px "Comic Sans MS";
+	text-decoration: none;
+}
+a.button_white:hover {
+	color:#77B8DB;
+}
+#footer {
+	font:normal 12px "Comic Sans MS";
+	color:#ffffff;
+	height:30px;
+	margin-top:10px;
+}
+#footer img {
+	border:none;
+}
+#footer a {
+	font: normal 12px "Comic Sans MS";
+	color:#ffffff;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#77B8DB;
+}
+.copyright {
+	float:left;
+}
+.socialnetworks {
+	float:right;
+}
+/* Basic jQuery Slider essential styles - start */
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+/* Basic jQuery Slider essential styles - end */
+#banner-fade,
+#banner-slide{
+}
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	text-decoration: none;
+	height:70px;
+	width:50px;
+}
+li.bjqs-prev a {
+	background-image:url(../img/arrow_left.png);
+}
+li.bjqs-next a {
+	background-image:url(../img/arrow_right.png);
+}
+ul.bjqs-controls.v-centered li a:hover{
+}
+ol.bjqs-markers {
+	position:absolute;
+	top:533px;
+	left:440px;
+}
+ol.bjqs-markers li a{
+	font:normal 11px "Comic Sans MS";
+	color:#fff;
+	text-decoration: none;
+	width:15px;
+	background:#999999;
+}
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background: #5B94C4;
+}
+p.bjqs-caption, .bjqs .caption{
+	background: #F5EDEC;
+	background: rgba(255,255,255,0.8);
+	font:normal 15px "Comic Sans MS";
+	color:#5B94C4;
+}
+.bjqs .caption {
+	display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;
+}
